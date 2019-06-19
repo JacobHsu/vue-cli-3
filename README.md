@@ -1,5 +1,23 @@
 # vue-cli-3
 
+`npm install gh-pages --save-dev`  
+
+[Command Line Utility](https://www.npmjs.com/package/gh-pages)
+
+package.json
+```js
+"scripts": {
+  "deploy": "npm run build && gh-pages -d dist"
+}
+```
+
+vue.config.js
+```js
+module.exports = {
+    publicPath: 'vue-cli-3' 
+}
+```
+
 ## Project setup
 ```
 yarn install
