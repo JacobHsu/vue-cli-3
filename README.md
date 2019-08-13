@@ -18,6 +18,14 @@ module.exports = {
 }
 ```
 
+## Note
+
+[路由組件傳參](https://router.vuejs.org/zh/guide/essentials/passing-props.html) 
+/user/:id   
+/user/prop/:id      
+/user/props/:id  
+ 
+
 ## Project setup
 ```
 yarn install
