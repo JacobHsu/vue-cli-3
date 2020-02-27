@@ -27,7 +27,15 @@ module.exports = {
 /user/:id   
 /user/prop/:id      
 /user/props/:id  
- 
+
+## 刪除遠端分支
+
+`$ git push origin :gh-pages`
+
+`git branch -a`  查看所有分支
+`git push origin gh-pages` 新建遠程分支
+
+[【狀況題】怎麼有時候推不上去](https://gitbook.tw/chapters/github/fail-to-push.html) 先拉再推
 
 ## Project setup
 ```
