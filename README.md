@@ -5,16 +5,19 @@
 [Command Line Utility](https://www.npmjs.com/package/gh-pages)
 
 package.json
+
 ```js
+"homepage": "https://jacobhsu.github.io/vue-cli-3/",
 "scripts": {
   "deploy": "npm run build && gh-pages -d dist"
 }
 ```
 
 vue.config.js
+
 ```js
 module.exports = {
-    publicPath: 'vue-cli-3' 
+    publicPath: process.env.NODE_ENV === 'production' ? 'vue-cli-3' : '/',
 }
 ```
 
