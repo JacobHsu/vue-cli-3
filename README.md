@@ -1,6 +1,8 @@
 # vue-cli-3
 
-`npm install gh-pages --save-dev`  
+## gh-pages
+
+`yarn add gh-pages -D`  
 
 [Command Line Utility](https://www.npmjs.com/package/gh-pages)
 
@@ -9,7 +11,7 @@ package.json
 ```js
 "homepage": "https://jacobhsu.github.io/vue-cli-3/",
 "scripts": {
-  "deploy": "npm run build && gh-pages -d dist"
+  "deploy": "yarn build && gh-pages -d dist"
 }
 ```
 
@@ -17,15 +19,18 @@ vue.config.js
 
 ```js
 module.exports = {
-    publicPath: process.env.NODE_ENV === 'production' ? 'vue-cli-3' : '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/vue-cli-3' : '/',
 }
 ```
 
+`'vue-cli-3'` error  
+https://jacobhsu.github.io/vue-cli-3/vue-cli-3/css/app.{id}.css
+
 ## Note
 
-[路由組件傳參](https://router.vuejs.org/zh/guide/essentials/passing-props.html) 
-/user/:id   
-/user/prop/:id      
+[路由組件傳參](https://router.vuejs.org/zh/guide/essentials/passing-props.html)  
+/user/:id  
+/user/prop/:id  
 /user/props/:id  
 
 ## 刪除遠端分支
